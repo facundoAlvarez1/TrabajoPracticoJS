@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TrabajoPracticoJS</title>
+<link rel="index" href="styles.css">
+</head>
+<body>
+<p class="Hello word"></p>
+<p class ="test"></p>
+<script>
+    var nombre = "facundo";
+    console.log(nombre);
+
+    var sum1 = 1;
+    var sum2 = 2;
+
+    function suma(sum1,sum2){
+        return sum1+sum2;
+    }
+
+    console.log(suma(sum1,sum2));
+
+    const PI= 3.14159;
+    console.log(PI);
+
+    function saludar(nombre){
+        console.log("hola " + nombre);
+    }
+    saludar(nombre);
+
+    function esPar(num){
+        if(num %2== 0){
+                return true;
+            }else{
+                return false;
+        }
+    }
+    console.log(esPar(3));
+
+    num = [4,2,3,1];
+    function sumaArray(num){
+        var total=0;
+        for(i=0; i < num.length ; i++){
+         total =total+ num[i];        
+        }
+        return total;
+    }
+    console.log(sumaArray(num));
+    
+    persona = {nombre: "facundo", edad : 26 , profesion : "junior"};
+
+
+    class Producto{
+        constructor(nombre,precio,stock) {
+             this.nombre = nombre;
+            this.precio = precio;
+            this.stock = stock;
+        }
+    }
+
+    class Pelicula{
+        constructor(titulo,director,anio){
+            this.titulo=titulo;
+            this.director=director;
+            this.anio=anio;
+        }
+    }
+
+    var fruta = ["banana","manzana","frutilla","mandarina","pera"];
+
+    var tercerPosicion = fruta[2];
+    console.log(fruta);
+
+    var numero = [1,2,3,4,5,6,7,8,9,10];
+
+    function filtrarPares(num)
+    {   
+         for (let i = 0; i < num.length; i++) {
+          const numero = num[i];
+        if(numero %2===0){
+            console.log(numero);
+        }
+    }
+        console.log("todos los numeros pares");
+
+    }
+    
+    filtrarPares(numero);
+
+    function crearPersona(nombre,edad){
+        const persona = {nombre,edad};
+        return persona;
+    }
+
+    const nuevaPersona =crearPersona("pedro",20);
+    console.log(nuevaPersona);
+
+    
+    function obtenerInformacion(persona1) {
+  return persona1;
+}
+
+// Ejemplo de uso:
+const persona1 = {
+  nombre: "Facundoo",
+  apellido: "Alvareez",
+  edad: 252,
+  domicilio: "Pigue 1631",
+  dni: 404728938
+};
+
+const informacionOfrecida = obtenerInformacion(persona1);
+console.log(informacionOfrecida);
+
+</script>
+</bo3/ht
